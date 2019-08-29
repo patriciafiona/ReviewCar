@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Review Car</string>
+    <string name="Merk_Mobil">Merk Mobil</string>
+    <string name="range_harga">Rp.0 - Rp.0</string>
+</resources>
