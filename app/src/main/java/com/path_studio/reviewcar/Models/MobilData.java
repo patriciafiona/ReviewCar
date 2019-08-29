@@ -89,4 +89,22 @@ public class MobilData {
         return list;
     }
 
+    //keperluan filter
+    public static ArrayList<Mobil> getFilterText(String text){
+        ArrayList<Mobil> filterList = new ArrayList<>();
+        //proses filter dari arraylist
+        for (String[] bData : data) {
+            if ((bData[0]).toLowerCase().contains(text.toLowerCase())) {
+                Mobil mobil = new Mobil();
+                mobil.setMerk_mobil(bData[0]);
+                mobil.setTipe_mobil(bData[1]);
+                mobil.setRange_harga(bData[2]);
+                mobil.setPhoto(bData[3]);
+                filterList.add(mobil);
+            }
+
+        }
+        return filterList;
+    }
+
 }

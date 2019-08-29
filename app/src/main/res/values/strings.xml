@@ -2,4 +2,6 @@
     <string name="app_name">Review Car</string>
     <string name="Merk_Mobil">Merk Mobil</string>
     <string name="range_harga">Rp.0 - Rp.0</string>
+    <string name="daftar_mobil">Daftar Mobil</string>
+    <string name="text_daftar_mobil">Berikut ini merupakan daftar mobil yang terdapat di Arphat.</string>
 </resources>
