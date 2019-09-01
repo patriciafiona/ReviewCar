@@ -25,12 +25,12 @@ public class MobilData {
                     "Rp 238,35 Juta",
                     "https://ik.imagekit.io/hj8sm3kk7/large/gallery/exterior/38/1924/toyota-yaris-front-angle-low-view-508123.jpg"
             },
-            {"Toyota Kijang Inova",
+            {"Toyota Kijang Innova",
                     "G M/T Gasoline",
                     "Rp 312,05 Juta",
                     "https://ik.imagekit.io/hj8sm3kk7/large/gallery/exterior/38/1240/toyota-kijang-innova-front-angle-low-view-799776.jpg"
             },
-            {"Daihatsu Alya",
+            {"Daihatsu Ayla",
                     "1.0L D MT",
                     "Rp 98,15 Juta",
                     "https://ik.imagekit.io/hj8sm3kk7/large/gallery/exterior/7/1731/daihatsu-ayla-front-angle-low-view-264839.jpg"
