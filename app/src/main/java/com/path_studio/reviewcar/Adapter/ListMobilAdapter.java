@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,7 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.path_studio.reviewcar.Models.Mobil;
+import com.path_studio.reviewcar.Models.MobilData;
 import com.path_studio.reviewcar.R;
+import com.path_studio.reviewcar.fragments.DetailMobilFragment;
+import com.path_studio.reviewcar.fragments.HomeFragment;
 
 import java.util.ArrayList;
 
@@ -39,6 +43,20 @@ public class ListMobilAdapter extends RecyclerView.Adapter<ListMobilAdapter.List
                 .into(holder.imgPhoto);
         holder.tvName.setText(mobil.getMerk_mobil());
         holder.tvFrom.setText(mobil.getRange_harga());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(holder.itemView.getContext(), "Kamu memilih " + listMobil.get(holder.getAdapterPosition()).getMerk_mobil(), Toast.LENGTH_SHORT).show();
+
+                //menampilkan datanya
+                MobilData  mobilData = new MobilData();
+                HomeFragment homeFragment = new HomeFragment();
+                homeFragment.go_to_detail(mobilData.getDetailData(holder.getAdapterPosition()));
+                
+            }
+        });
+
     }
 
     @Override

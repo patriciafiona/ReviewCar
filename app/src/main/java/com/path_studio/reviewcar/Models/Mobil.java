@@ -5,9 +5,19 @@ public class Mobil {
     private String merk_mobil;
     private String tipe_mobil;
     private String range_harga;
+
     private String kapasitas_mesin;
     private String tempat_duduk;
-    private String jenis_transmisi;
+    private String tenaga_mesin;
+    private String torsi;
+    private String jenis_bbm;
+    private String tangki;
+    private String panjang;
+    private String lebar;
+    private String tinggi;
+    private String jumlah_pintu;
+    private String mesin;
+
 
     private String photo;
 
@@ -43,6 +53,11 @@ public class Mobil {
         this.range_harga = range_harga;
     }
 
+
+
+
+
+
     public String getKapasitas_mesin() {
         return kapasitas_mesin;
     }
@@ -59,11 +74,75 @@ public class Mobil {
         this.tempat_duduk = tempat_duduk;
     }
 
-    public String getJenis_transmisi() {
-        return jenis_transmisi;
+    public String getTenaga_mesin() {
+        return tenaga_mesin;
     }
 
-    public void setJenis_transmisi(String jenis_transmisi) {
-        this.jenis_transmisi = jenis_transmisi;
+    public void setTenaga_mesin(String tenaga_mesin) {
+        this.tenaga_mesin = tenaga_mesin;
+    }
+
+    public String getTorsi() {
+        return torsi;
+    }
+
+    public void setTorsi(String torsi) {
+        this.torsi = torsi;
+    }
+
+    public String getJenis_bbm() {
+        return jenis_bbm;
+    }
+
+    public void setJenis_bbm(String jenis_bbm) {
+        this.jenis_bbm = jenis_bbm;
+    }
+
+    public String getTangki() {
+        return tangki;
+    }
+
+    public void setTangki(String tangki) {
+        this.tangki = tangki;
+    }
+
+    public String getPanjang() {
+        return panjang;
+    }
+
+    public void setPanjang(String panjang) {
+        this.panjang = panjang;
+    }
+
+    public String getLebar() {
+        return lebar;
+    }
+
+    public void setLebar(String lebar) {
+        this.lebar = lebar;
+    }
+
+    public String getTinggi() {
+        return tinggi;
+    }
+
+    public void setTinggi(String tinggi) {
+        this.tinggi = tinggi;
+    }
+
+    public String getJumlah_pintu() {
+        return jumlah_pintu;
+    }
+
+    public void setJumlah_pintu(String jumlah_pintu) {
+        this.jumlah_pintu = jumlah_pintu;
+    }
+
+    public String getMesin() {
+        return mesin;
+    }
+
+    public void setMesin(String mesin) {
+        this.mesin = mesin;
     }
 }

@@ -1,7 +1,23 @@
 <resources>
     <string name="app_name">Review Car</string>
     <string name="Merk_Mobil">Merk Mobil</string>
-    <string name="range_harga">Rp.0 - Rp.0</string>
+    <string name="range_harga">Rp.0</string>
     <string name="daftar_mobil">Daftar Mobil</string>
     <string name="text_daftar_mobil">Berikut ini merupakan daftar mobil yang terdapat di Arphat.</string>
+    <string name="nama_pembuat">Patricia Fiona</string>
+
+
+    <string name="kapasitas_mesin">Kapasitas Mesin</string>
+    <string name="bahan_bakar">Bahan Bakar</string>
+    <string name="tenaga">Tenaga Mesin</string>
+    <string name="spesifikasi">Spesifikasi</string>
+    <string name="jenis_mesin">Mesin</string>
+    <string name="torsi">Torsi</string>
+    <string name="jumlah_kursi">Jumlah kursi</string>
+    <string name="kapasitas_tangki">Kapasitas Tangki</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="jumlah_pintu">Jumlah Pintu</string>
+    <string name="rating">Rating</string>
 </resources>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DetailMobilFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Bagian foto dan Box melayang-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/gambar_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    tools:src="@android:color/darker_gray"/>
+
+                <!--Bagian Box-->
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="-50dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/shadow_box">
+
+                    <!--Column 1-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_5"/>
+
+                        <TextView
+                            android:id="@+id/text_box_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/kapasitas_mesin"/>
+
+                    </LinearLayout>
+
+                    <!--Column 2-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_6"/>
+
+                        <TextView
+                            android:id="@+id/text_box_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/bahan_bakar"/>
+
+                    </LinearLayout>
+
+                    <!--Column 3-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_3"/>
+
+                        <TextView
+                            android:id="@+id/text_box_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/tenaga"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Bagian Tipe Mobil, jenis, dan Harga-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="30dp"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:id="@+id/text_harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/range_harga"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textStyle="bold"
+                    android:textSize="24dp"/>
+
+                <TextView
+                    android:id="@+id/text_merk_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Merk_Mobil"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+        <!--Bagian Rating-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rating"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+            <!--Bagian Spesifikasi Mobil-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:padding="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spesifikasi"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <!--Jenis Mesin-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/jenis_mesin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_mesin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/jenis_mesin"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Kapasitas Mesin-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/kapasitas_mesin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_kapasitas_mesin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/kapasitas_mesin"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Tenaga Mesin-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/tenaga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_tenaga_mesin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tenaga"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Torsi-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/torsi"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_torsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/torsi"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp">
+
+                    <!--Jumlah kursi-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/jumlah_kursi"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_kursi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/jumlah_kursi"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Kapasitas Tangki-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/kapasitas_tangki"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_kapasitas_tangki"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/kapasitas_tangki"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Panjang-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/panjang"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_panjang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/panjang"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Lebar-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/lebar"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_lebar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/lebar"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Tinggi-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/tinggi"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_tinggi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tinggi"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <!--Jumlah pintu-->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="@string/jumlah_pintu"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text_pintu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/jumlah_pintu"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
